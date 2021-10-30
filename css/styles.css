@@ -1,0 +1,15 @@
+h2 {
+    font-size : 30pt;
+    font-family : "Lucida Console", "Courier New", monospace;
+}
+label {
+    font-size : 20pt;
+    font-family : "Lucida Console", "Courier New", monospace;
+}
+p {
+    font-size : 15pt;
+    font-family : "Lucida Console", "Courier New", monospace;
+}
+body {
+   background-color: beige;
+}

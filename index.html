@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Encrypt/Binary & Decimal Converter: Evan Billingsley</title>
+	  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/pure-min.css" integrity="sha384-Uu6IeWbM+gzNVXJcM9XV3SohHtmWE+3VGi496jvgX1jyvDTXfdK+rfZc8C1Aehk5" crossorigin="anonymous">
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.js"></script>
+    <style>
+    .secondary {
+        background: white;
+        font-size : 15pt;
+        font-family : "Lucida Console", "Courier New", monospace;
+        border: 1px solid black;
+        border-radius: 4px;
+    }
+    </style>
+	<meta charset="utf-8"/>
+  </head>
+
+  <body>
+	<h2><i class="fa fa-lock"></i> Encrypt a Message <i class="fa fa-lock"></i></h2>
+	<div>
+    <form id="form1" name="form1" onsubmit="return false">
+      <label for="messageInput">Input Phrase to Encrypt</label><br>
+      <input type="text" id="messageInput" placeholder="Input Message to Encrypt">
+      <button class="pure-button secondary" id="encrypt" value="Submit" onclick="encryptInput()">Encrypt</button>
+    </form>
+    <p id="outputAES">AES Encrypted:</p>
+    <p id="outputSHA1">SHA1 Encrypted:</p>
+    <p id="outputSHA224">SHA224 Encrypted:</p>
+    <p id="outputSHA256">SHA256 Encrypted:</p>
+	</div>
+  <div>
+    <form id="form2" name="form2" onsubmit="return false">
+      <label for="decimalInput">Input Decimal to Convert to Binary</label><br>
+      <input type="text" id="decimalInput" placeholder="Decimal to Binary">
+      <button class="pure-button secondary" id="d2b" value="Submit" onclick="dTob()">Convert</button>
+    </form>
+    <p id="outputBinary">Binary Conversion:</p>
+    <form id="form3" name="form3" onsubmit="return false">
+      <label for="binaryInput">Input Binary to Convert to Decimal</label><br>
+      <input type="text" id="binaryInput" placeholder="Binary to Decimal">
+      <button class="pure-button secondary" id="b2d" value="Submit" onclick="bTod()">Convert</button>
+    </form>
+    <p id="outputDecimal">Decimal Conversion:</p>
+  </div>
+	<script src="./js/script.js"> </script>
+  </body>
+  </html>
